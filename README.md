@@ -1,2 +1,2 @@
 # RubyTutorial
-Contains basic scripts to learn Ruby.
+Some beginners stuff in ruby for my future reference.
