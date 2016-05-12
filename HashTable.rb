@@ -10,6 +10,9 @@ HashTable = {
 			 
 puts HashTable["key2"]
 
+#Print the contents of hash table
+HashTable.each{ |k, v| puts "Key: #{k} Value: #{v}"}
+
 #Declaring Hash Table and adding values in it
 HashTable_New = Hash.new
 HashTable_New["NewKey"] = "NewValue"

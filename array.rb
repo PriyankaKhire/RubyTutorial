@@ -12,3 +12,6 @@ puts Mixed_Array[-1]
 
 #Putting variable in string statement
 puts "This is a string **** #{String_Array[1]} **** and i am substuting a variable there"
+
+#Declaring an array
+arr = Array.new
