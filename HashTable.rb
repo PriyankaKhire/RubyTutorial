@@ -18,5 +18,23 @@ HashTable_New = Hash.new
 HashTable_New["NewKey"] = "NewValue"
 HashTable_New["AnotherKey"] = "AnotherValue"
 puts HashTable_New["AnotherKey"]
-			 
+		
+choice = 'y'	
+ArrayHash = Hash.new	
+while choice == 'y' do			 
+	puts "Enter a hash key"
+	user_key = gets.chomp
+	puts "Enter value"
+	user_value = gets.chomp
+	#If key not present in hash table then add it
+	if ArrayHash.key?(user_key) == false
+	  ArrayHash[user_key] = [user_value]
+	else
+	  ArrayHash[user_key].push(user_value)
+	end
+	puts "Add another ?"
+	choice = gets.chomp
+end		
+ArrayHash.each{ |k, v| puts "Key: #{k} Value: #{v}"}
+	 
 $end

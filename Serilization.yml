@@ -1,0 +1,19 @@
+---
+- !ruby/object:A
+  string: hello 0
+  number: 0
+- !ruby/object:A
+  string: hello 1
+  number: 1
+- !ruby/object:A
+  string: hello 2
+  number: 2
+- !ruby/object:A
+  string: hello 3
+  number: 3
+- !ruby/object:A
+  string: hello 4
+  number: 4
+- !ruby/object:A
+  string: hello 5
+  number: 5
