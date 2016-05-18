@@ -36,5 +36,11 @@ while choice == 'y' do
 	choice = gets.chomp
 end		
 ArrayHash.each{ |k, v| puts "Key: #{k} Value: #{v}"}
+
+if ArrayHash.empty?
+  puts "Hash table of arrays is empty"
+else
+  puts "Hash table is not empty"
+end
 	 
 $end

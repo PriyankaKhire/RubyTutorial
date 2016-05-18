@@ -24,7 +24,7 @@ end
 #Store the whole array of objects into a yaml file
 #This is better than storing indivudial objects
 puts "Saving the array of objects to a file"
-File.open("Serilization.yml", "a") do |file|
+File.open("Serilization.yml", "w") do |file|
   file.puts YAML::dump(array)
 end
 
