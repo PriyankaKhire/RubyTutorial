@@ -8,7 +8,12 @@ HashTable = {
 			 "key5" => "Value5"
 			 }
 			 
-puts HashTable["key2"]
+puts HashTable["key5"]
+if HashTable["key6"].nil?
+  puts "Key 6 does not exist"
+else
+  puts "Key 6 exists"
+end
 
 #Print the contents of hash table
 HashTable.each{ |k, v| puts "Key: #{k} Value: #{v}"}

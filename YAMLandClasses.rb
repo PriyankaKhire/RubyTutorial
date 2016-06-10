@@ -26,6 +26,9 @@ class A
   
 end
 
+
+
+
 obj = A.new("Hi", 5)
 puts obj.to_yaml
 puts

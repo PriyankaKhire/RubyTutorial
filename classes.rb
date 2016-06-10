@@ -64,7 +64,38 @@ class BaseClass
 	public :func1
 end
 
+class GetObj
+
+  def initialize
+    puts "Get Object got initialize"
+  end
+
+  def get_obj(obj)
+    puts "The object recieved is "
+    p obj
+	puts "************"
+  end
+end
+
+class SendObj
+attr_accessor :name, :number, :time
+
+  def initialize(n, nn, t)
+    @name = n
+	@number = nn
+	@time = t
+  end
+
+  def send_obj()
+    getObj = GetObj.new()
+	getObj.get_obj(self)
+  end
+end
+
 #Main prog
+
+sendObj = SendObj.new("Send Object", 100, Time.now)
+sendObj.send_obj
 
 #Declare the object
 obj = BaseClass.new(5, 10)
