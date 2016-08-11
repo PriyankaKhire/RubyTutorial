@@ -1,0 +1,3 @@
+# Qman Command:  
+echo hello 
+hello 

@@ -10,6 +10,11 @@ puts Mixed_Array[1]
 puts String_Array[-2]
 puts Mixed_Array[-1]
 
+#Concatinating the arrays
+puts "Concatinating the arrays"
+Mixed_Array += String_Array
+puts Mixed_Array
+
 #Putting variable in string statement
 puts "This is a string **** #{String_Array[1]} **** and i am substuting a variable there"
 

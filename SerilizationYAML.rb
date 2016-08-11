@@ -32,6 +32,14 @@ puts "Within the SerilizationYAML.rb file accessing the contents of array"
 puts "The object number 3 has number = #{array[3].number}"
 puts "The object number 4 has string = #{array[4].string}"
 
+#Creating array object
+a_obj = A.new("Object", 1)
+puts "Serilizing the string contents of a object into yaml file"
+File.open("Serilization_aobj.yml", "w") do |file|
+  file.puts YAML::dump(a_obj.string)
+end
+
+
 
 #Creating a hash table of random values
 puts "Creating a hash table..."
